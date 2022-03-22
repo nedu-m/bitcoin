@@ -9,13 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="shortcut icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -34,7 +29,6 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 
 <body>
@@ -267,186 +261,17 @@
     </div>
     <!-- Hero section end -->
 
-    <!-- API ICONS -->
+    <!-- Cryptocurrency Price Widget -->
     <div class="api-div">
-        <section class="crypto-currency-wrap">
-            <script type="text/javascript" async="" src="https://widgets.cryptocompare.com/serve/v2/coin/header?fsyms=BTC,ETH,XMR,XRP,ADA,MONA,DASH,BCH,LTC&amp;tsyms=USD&amp;app=assureddigitalbank.org"></script>
-            <div class="ccc-widget ccc-header-v2" style="background: rgb(255, 255, 255); float: right; box-sizing: border-box; line-height: 1;">
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuBTC"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxBTC" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_BTC_USD">$ 40,846.3</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">BTC</div>
-                            <div class="priceValue"><a rel="nofollow" href="https://www.cryptocompare.com/coins/btc/overview/usd" id="priceMultiHeader_BTC_USD">$ 40,846.3</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_BTC_USD">
-                                <img class="priceChangeImage" id="changePctImg_BTC_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_BTC_USD">2.20 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuETH"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxETH" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_ETH_USD">$ 2,814.60</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">ETH</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/eth/overview/usd" id="priceMultiHeader_ETH_USD">$ 2,814.60</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_ETH_USD">
-                                <img class="priceChangeImage" id="changePctImg_ETH_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_ETH_USD">5.05 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuXMR"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxXMR" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_XMR_USD">$ 186.61</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">XMR</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/xmr/overview/usd" id="priceMultiHeader_XMR_USD">$ 186.61</a></div>
-                            <div class="priceChange priceChangeDown" id="changePctContainer_XMR_USD">
-                                <img class="priceChangeImage" id="changePctImg_XMR_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjAsOTYuODc5IDE5My4xMjksMjg5LjM3OSAzODYuMjU3LDk2Ljg3OSAiIGZpbGw9IiNhMTFiMGEiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==">                                <span id="changePct_XMR_USD">-1.27 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuXRP"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxXRP" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_XRP_USD">$ 0.7932</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">XRP</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/xrp/overview/usd" id="priceMultiHeader_XRP_USD">$ 0.7932</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_XRP_USD">
-                                <img class="priceChangeImage" id="changePctImg_XRP_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_XRP_USD">3.01 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuADA"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxADA" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_ADA_USD">$ 0.8399</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">ADA</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/ada/overview/usd" id="priceMultiHeader_ADA_USD">$ 0.8399</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_ADA_USD">
-                                <img class="priceChangeImage" id="changePctImg_ADA_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_ADA_USD">3.69 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuMONA"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxMONA" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_MONA_USD">$ 0.9391</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">MONA</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/mona/overview/usd" id="priceMultiHeader_MONA_USD">$ 0.9391</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_MONA_USD">
-                                <img class="priceChangeImage" id="changePctImg_MONA_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_MONA_USD">1.06 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuDASH"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxDASH" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_DASH_USD">$ 96.67</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">DASH</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/dash/overview/usd" id="priceMultiHeader_DASH_USD">$ 96.67</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_DASH_USD">
-                                <img class="priceChangeImage" id="changePctImg_DASH_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_DASH_USD">0.59 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuBCH"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxBCH" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_BCH_USD">$ 297.00</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">BCH</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/bch/overview/usd" id="priceMultiHeader_BCH_USD">$ 297.00</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_BCH_USD">
-                                <img class="priceChangeImage" id="changePctImg_BCH_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_BCH_USD">1.94 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ccc-coin-container">
-                    <div class="currencyMenuContainer">
-                        <div class="currencyMenu" id="currencyMenuLTC"></div>
-                        <div class="currencyMenuBox" onclick="event.stopPropagation();" id="currencyMenuBoxLTC" style="display: none;">
-
-                            <div class="toPriceMenu" onclick="changeToSymbol('USD'); closeDropdowns()" id="priceMultiHeaderMenu_LTC_USD">$ 110.92</div>
-
-                        </div>
-                    </div>
-                    <div class="ccc-price" style="float: left;">
-                        <div class="priceTabContent priceTabContentUSD" style="display: block;">
-                            <div class="priceName">LTC</div>
-                            <div class="priceValue" style="color: #000;"><a rel="nofollow" href="https://www.cryptocompare.com/coins/ltc/overview/usd" id="priceMultiHeader_LTC_USD">$ 110.92</a></div>
-                            <div class="priceChange priceChangeUp" id="changePctContainer_LTC_USD">
-                                <img class="priceChangeImage" id="changePctImg_LTC_USD" style="margin-right: 5px; vertical-align: middle;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjE5My4xMjksOTYuODc5IDAsMjg5LjM3OSAzODYuMjU3LDI4OS4zNzkgIiBmaWxsPSIjM2Q5NDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=">                                <span id="changePct_LTC_USD">2.96 %</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div
+            style="height:62px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%;  margin: 0px; width: 100%;">
+            <div style="height:40px; padding:0px; margin:0px; width: 100%;"><iframe
+                    src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover="
+                    width="100%" height="30px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0"
+                    style="border:0;margin:0;padding:0;"></iframe>
             </div>
-        </section>
     </div>
-    <!-- API ICON -->
+    <!-- /Cryptocurrency Price Widget -->
 
     <!-- About section -->
     <section class="about-section spad">
@@ -466,21 +291,68 @@
                     <a href="./contact.html" class="site-btn sb-gradients  mt-6" style="margin-left: 1rem;">Contact Us</a>
                 </div>
 
-                <div class="about-img  col-lg-5  " style="margin-left: 1rem;">
-                    <img src="img/about-img.png" alt="">
+                <div class="about-img  col-lg-5  " style="margin-left: 1rem;"
+                    <img src="img/about-img.png" alt="" >
                 </div>
 
             </div>
     </section>
     <!-- About section end -->
 
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="tradingview_80bc6"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.MediumWidget(
+                {
+                    "symbols": [
+                        [
+                            "ETH",
+                            "COINBASE:ETHUSD|12M"
+                        ],
+                        [
+                            "BTC",
+                            "BITSTAMP:BTCUSD|12M"
+                        ],
+                        [
+                            "SOL",
+                            "BINANCE:SOLUSDT|12M"
+                        ],
+                        [
+                            "BNB",
+                            "BINANCE:BNBUSD|12M"
+                        ]
+                    ],
+                    "chartOnly": false,
+                    "width": "100%",
+                    "height": 400,
+                    "locale": "en",
+                    "colorTheme": "dark",
+                    "gridLineColor": "rgba(240, 243, 250, 0)",
+                    "fontColor": "#787B86",
+                    "isTransparent": false,
+                    "autosize": false,
+                    "showVolume": false,
+                    "scalePosition": "no",
+                    "scaleMode": "Normal",
+                    "fontFamily": "-apple-system, BlinkMacSystemFont, SegoeUI, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                    "noTimeScale": false,
+                    "valuesTracking": "1",
+                    "chartType": "line",
+                    "container_id": "tradingview_80bc6"
+                }
+            );
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
     <!-- Process section -->
     <section class="process-section">
         <div class="container">
             <div class="invest-top-text">
-                <span class="invest-span">WHAT WE AFFORE FOR YOU</span>
                 <p data-aos="flip-down"><span>No idea</span> <mark style="color: rgb(36, 52, 82); background-color: transparent;">what's</mark> <span> going on?</span></p>
-                <article>We make inesting in the financial market as easyas it gets</article>
+                <article>We make investing in the cryptocurrency financial market as easy as it gets</article>
             </div>
             <div class="row">
                 <div class="col-md-4 process">
