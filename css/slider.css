@@ -81,7 +81,7 @@ svg {
   position: absolute;
   z-index: 3;
   left: 50%;
-  bottom: 2rem;
+  bottom: 1rem;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 0;
@@ -92,8 +92,8 @@ svg {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   margin: 0 0.5rem;
   border-radius: 50%;
   border: 2px solid #fff;
@@ -168,6 +168,7 @@ svg {
   height: 100%;
   background-size: cover;
   will-change: transform;
+  background-repeat: no-repeat;
 }
 
 .slide:nth-child(1) {
@@ -176,16 +177,17 @@ svg {
 
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-3.jpg");
+  background-image: url("../img/download.jpg");
 }
 
 .slide:nth-child(1) .slide__overlay-path {
-  fill: #e99c7e;
+  fill: rgba(21, 120, 150, 0.8);
 }
 
 @media (max-width: 991px) {
   .slide:nth-child(1) .slide__text {
-    background-color: rgba(233, 156, 126, 0.8);
+    background-color: rgba(21, 120, 150, 0.8);
+    height: 18%;
   }
 }
 
@@ -195,16 +197,17 @@ svg {
 
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-2.jpg");
+  background-image: url("https://assureddigitalbank.org/assets/images/slider-slide-1.jpg");
 }
 
 .slide:nth-child(2) .slide__overlay-path {
-  fill: #e1ccae;
+  fill: rgba(21, 120, 150, 0.8);
 }
 
 @media (max-width: 991px) {
   .slide:nth-child(2) .slide__text {
-    background-color: rgba(225, 204, 174, 0.8);
+    background-color: rgba(21, 120, 150, 0.8);
+    height: 18%;
   }
 }
 
@@ -214,35 +217,17 @@ svg {
 
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-1.jpg");
+  background-image: url("../img/hero.jpg");
 }
 
 .slide:nth-child(3) .slide__overlay-path {
-  fill: #adc5cd;
+  fill: rgba(21, 120, 150, 0.8);
 }
 
 @media (max-width: 991px) {
   .slide:nth-child(3) .slide__text {
-    background-color: rgba(173, 197, 205, 0.8);
-  }
-}
-
-.slide:nth-child(4) {
-  left: 300%;
-}
-
-.slide:nth-child(4) .slide__bg {
-  left: -150%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");
-}
-
-.slide:nth-child(4) .slide__overlay-path {
-  fill: #cbc6c3;
-}
-
-@media (max-width: 991px) {
-  .slide:nth-child(4) .slide__text {
-    background-color: rgba(203, 198, 195, 0.8);
+    background-color: rgba(21, 120, 150, 0.8);
+    height: 18%;
   }
 }
 
@@ -285,7 +270,7 @@ svg {
   max-height: 100%;
   position: absolute;
   width: 25%;
-  bottom: 15%;
+  bottom: 5%;
   left: 12%;
   color: #fff;
   -webkit-transition: opacity 0.5s 0.8s, -webkit-transform 0.5s 0.8s;
@@ -318,70 +303,30 @@ svg {
 }
 
 .slide__text-heading {
-  font-family: "Polar", Helvetica, Arial, sans-serif;
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
   font-size: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
   .slide__text-heading {
-    line-height: 20rem;
+    line-height: 5rem;
     font-size: 3.5rem;
   }
 }
 
 .slide__text-desc {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Rubik", Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: large;
 }
 
 @media (max-width: 991px) {
   .slide__text-desc {
     display: none;
   }
-}
-
-.slide__text-link {
-  z-index: 5;
-  display: inline-block;
-  position: relative;
-  padding: 0.5rem;
-  cursor: pointer;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 2.3rem;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-}
-
-@media (max-width: 991px) {
-  .slide__text-link {
-    display: none;
-  }
-}
-
-.slide__text-link:before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transform: rotateX(-85deg);
-  transform: rotateX(-85deg);
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-  will-change: transform;
-}
-
-.slide__text-link:hover:before {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
 }
 /*# sourceMappingURL=slider.css.map */
