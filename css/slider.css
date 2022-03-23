@@ -282,6 +282,7 @@ svg {
 }
 
 .slide__text {
+  max-height: 100%;
   position: absolute;
   width: 25%;
   bottom: 15%;

@@ -10,11 +10,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Questrial&family=Rubik&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  padding: 0;
 }
 
 h1,
