@@ -62,6 +62,7 @@ h6 {
 p {
   font-size: 15px;
   line-height: 1.6;
+  padding: 0 2px;
 }
 
 img {
@@ -573,7 +574,7 @@ button.site-btn:hover {
   margin-bottom: 30px;
   padding-top: 5px;
   font-size: 3.5rem;
-  color: rgb(180, 128, 32);
+  color: #eeae00;
 }
 
 .process-step h4 {
@@ -1472,15 +1473,15 @@ button.site-btn:hover {
   width: 100%;
   height: 50px;
   border: none;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid gray;
   font-size: 16px;
   padding-bottom: 10px;
-  color: #20509e;
+  color: white;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #20509e;
+  border-color: white;
 }
 
 .contact-form textarea {
@@ -1932,4 +1933,10 @@ button.site-btn:hover {
   .comment .comment-content {
     padding-left: 0;
   }
+}
+
+.sm-device {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

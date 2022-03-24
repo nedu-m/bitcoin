@@ -326,13 +326,18 @@ dd {
 }
 
 .service-text .hr {
-  border: 2px solid rgb(36, 52, 82);
-  width: 120px;
+  border-bottom: 2px solid rgb(36, 52, 82);
+  width: 190px;
+}
+
+.service-text .hr-2 {
+  border-bottom: 2px solid rgb(36, 52, 82);
+  width: 350px;
 }
 
 .service-text2 .hr {
-  border: 2px solid;
-  width: 140px;
+  border-bottom: 2px solid;
+  width: 330px;
 }
 
 .service-text h2,
