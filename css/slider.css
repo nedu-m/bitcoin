@@ -22,6 +22,7 @@ svg {
   -ms-user-select: none;
   user-select: none;
   cursor: all-scroll;
+   overflow: hidden !important;
 }
 
 .slider-control {
